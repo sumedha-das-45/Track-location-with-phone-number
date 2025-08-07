@@ -1,6 +1,5 @@
 import phonenumbers
 from phonenumbers import geocoder 
-#from test import number
 import folium
 
 Key = "6d6f969fd9024ac8afde957f0c86a5ba"
@@ -28,3 +27,4 @@ print(lat,lng)
 map_location = folium.Map(location = [lat,lng], zoom_start=9)
 folium.Marker([lat,lng], popup=number_location).add_to(map_location)
 map_location.save("mylocation.html")
+
